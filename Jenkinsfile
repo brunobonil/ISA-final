@@ -1,6 +1,9 @@
 #!/usr/bin/env groovy
 
+
+import org.jenkinsci.plugins.docker.workflow.DockerDSL
 node {
+    def docker = new DockerDSL()
     stage('checkout') {
         checkout scm
     }
