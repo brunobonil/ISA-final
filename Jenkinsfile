@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                checkout scm
+                git branch: 'main', url: 'https://github.com/brunobonil/ISA-final.git'
             }
         }
         
