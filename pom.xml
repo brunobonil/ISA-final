@@ -409,8 +409,12 @@
                             </platforms>
                         </from>
                         <to>
-                            <image>isafinal2:latest</image>
+                            <image>docker.io/brunobonil/isafinal2:latest:latest</image>
                         </to>
+                        <auth>
+                          <username>${{DOCKER_REGISTRY_USER}}</username>
+                          <password>${{DOCKER_REGISTRY_PWD}}</password>
+                        </auth>
                         <container>
                             <entrypoint>
                                 <shell>bash</shell>
