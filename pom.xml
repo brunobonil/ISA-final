@@ -409,7 +409,7 @@
                             </platforms>
                         </from>
                         <to>
-                            <image>docker.io/brunobonil/isafinal2:latest:latest</image>
+                            <image>docker.io/brunobonil/isafinal2:latest</image>
                         </to>
                         <auth>
                           <username>${{DOCKER_REGISTRY_USER}}</username>
