@@ -32,7 +32,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-login', passwordVariable: 'DOCKER_REGISTRY_PWD', usernameVariable: 'DOCKER_REGISTRY_USER')]) {
                     sh """
-                    ./mvnw clean compile jib:build
+                    ./mvnw clean compile jib:build \
                     ./mvnw -ntp jib:build \
                     -Djib.to.auth.username=${DOCKER_REGISTRY_USER} \
                     -Djib.to.auth.password=${DOCKER_REGISTRY_PWD}
